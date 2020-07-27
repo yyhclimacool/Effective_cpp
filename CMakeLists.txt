@@ -19,4 +19,5 @@ message(STATUS "CMAKE_CXX_FLAGS_DEBUG : " ${CMAKE_CXX_FLAGS_DEBUG})
 message(STATUS "CMAKE_CXX_FLAGS_RELWITHDEBINFO : " ${CMAKE_CXX_FLAGS_RELWITHDEBINFO})
 message(STATUS "CMAKE_CXX_FLAGS_RELEASE : " ${CMAKE_CXX_FLAGS_RELEASE})
 
-add_subdirectory(third_ed)
+add_subdirectory(Chapter01)
+add_subdirectory(Chapter08)

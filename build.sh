@@ -9,7 +9,6 @@ if [ "$1"x = "clean"x ]
 then
   if [ -d ${BUILD_DIR} ]
   then
-    LOG WARNING "rm -rf ${BUILD_DIR}"
     rm -rf ${BUILD_DIR}
   fi
   exit 0
