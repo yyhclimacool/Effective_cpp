@@ -4,61 +4,39 @@
 class Shape {
 public:
   enum Color {Red, Yellow, Blue};
-  virtual void draw(Color c = Red) {
+  void doDraw(Color c) {
     switch(c) {
     case Red:
-      std::cout << "Shape::Red" << std::endl;
+      std::cout << "Red" << std::endl;
       break;
     case Yellow:
-      std::cout << "Shape::Yellow" << std::endl;
+      std::cout << "Yellow" << std::endl;
       break;
     case Blue:
-      std::cout << "Shape::Blue" << std::endl;
+      std::cout << "Blue" << std::endl;
       break;
     default:
-      std::cout << "Shape : Illegal color" << std::endl;
+      std::cout << "Illegal color" << std::endl;
       break;
     }
+  }
+  virtual void draw(Color c = Red) {
+    doDraw(c);
   }
 };
 
 class Circle : public Shape {
 public:
   virtual void draw(Color c) {
-    switch(c) {
-    case Red:
-      std::cout << "Circle::Red" << std::endl;
-      break;
-    case Yellow:
-      std::cout << "Circle::Yellow" << std::endl;
-      break;
-    case Blue:
-      std::cout << "Circle::Blue" << std::endl;
-      break;
-    default:
-      std::cout << "Circle : Illegal color" << std::endl;
-      break;
-    }
+    doDraw(c);
   }
 };
 
 class Rectangle : public Shape {
 public:
+  // Do NOT overwrite default parameter
   virtual void draw(Color c = Blue) {
-    switch(c) {
-    case Red:
-      std::cout << "Rectangle::Red" << std::endl;
-      break;
-    case Yellow:
-      std::cout << "Rectangle::Yellow" << std::endl;
-      break;
-    case Blue:
-      std::cout << "Rectangle::Blue" << std::endl;
-      break;
-    default:
-      std::cout << "Rectangle : Illegal color" << std::endl;
-      break;
-    }
+    doDraw(c);
   }
 };
 
