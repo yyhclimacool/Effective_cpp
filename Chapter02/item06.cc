@@ -22,8 +22,8 @@ void test() {
   HomeForSale h1(10);
   HomeForSale h2(42);
   
-  HomeForSale h3(h1);
-  h3 = h2;
+  //HomeForSale h3(h1);
+  //h3 = h2;
 }
 
 int main() {
