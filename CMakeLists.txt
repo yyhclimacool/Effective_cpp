@@ -21,6 +21,7 @@ message(STATUS "CMAKE_CXX_FLAGS_RELEASE : " ${CMAKE_CXX_FLAGS_RELEASE})
 
 add_subdirectory(Chapter01)
 add_subdirectory(Chapter02)
+add_subdirectory(Chapter03)
 add_subdirectory(Chapter06)
 add_subdirectory(Chapter07)
 add_subdirectory(Chapter08)
